@@ -14,6 +14,7 @@ class Item < ApplicationRecord
   belongs_to :delivery_date
 
   with_options presence: true do
+    validates :image
     validates :user_id
     validates :name
     validates :description
