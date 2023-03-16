@@ -26,7 +26,7 @@ class Item < ApplicationRecord
                       format: { with: /\A[0-9]+\z/ }
   end
 
-  with_options numericality: { other_than: 0 , message: "can't be blank"} do
+  with_options numericality: { other_than: 0, message: "can't be blank" } do
     validates :category_id
     validates :item_status_id
     validates :delivery_cost_id
