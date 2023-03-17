@@ -15,7 +15,6 @@ class Item < ApplicationRecord
 
   with_options presence: true do
     validates :image
-    validates :user_id
     validates :name
     validates :description
     validates :category_id
