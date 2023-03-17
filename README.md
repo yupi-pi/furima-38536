@@ -35,6 +35,14 @@
 - belongs_to :user
 - has_one :order
 
+- has_one_attached :image
+
+- belongs_to :category
+- belongs_to :item_status
+- belongs_to :delivery_cost
+- belongs_to :prefecture
+- belongs_to :delivery_date
+
 ## ordersテーブル
 
 |Column|Type       |Options                       |
