@@ -23,7 +23,7 @@ class Item < ApplicationRecord
     validates :delivery_cost_id
     validates :prefecture_id
     validates :delivery_date_id
-    validates :price, numericality: {only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
+    validates :price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 }
   end
 
   with_options numericality: { other_than: 0, message: "can't be blank" } do
